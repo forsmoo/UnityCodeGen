@@ -1,0 +1,20 @@
+{
+    "name": "lirp.codegen.tests.editor",
+    "references": [
+        "GUID:058d4c71ddd5cd043a354c160472f0e4",
+        "GUID:762480b55c823e545bf3f20e6185db4f",
+        "GUID:0acc523941302664db1f4e527237feb3",
+        "GUID:27619889b8ba8c24980f49ee34dbb44a"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

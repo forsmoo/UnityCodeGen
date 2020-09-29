@@ -1,0 +1,17 @@
+{
+    "name": "lirp.codegen.editor",
+    "references": [
+        "GUID:058d4c71ddd5cd043a354c160472f0e4"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
