@@ -25,6 +25,14 @@ namespace CodeGeneration
             Member = new CodeMemberField(type, name);
         }
 
+        public FieldGenerator(Type type, string name, bool isPublic)
+        {
+            this.Name = name;
+            this.FieldType = type.ToString();
+            Member = new CodeMemberField(type, name);
+            Member.Attributes = isPublic ? MemberAttributes.Public : MemberAttributes.Private;
+        }
+
         public FieldGenerator(string type, string name, bool isPublic)
         {
             this.Name = name;

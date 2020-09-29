@@ -104,5 +104,4 @@ namespace CodeGeneration
             //classType.Members.Add.Add(new CodeSnippetTypeMember(""));
         }
     }
-
 }

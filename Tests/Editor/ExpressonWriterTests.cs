@@ -344,6 +344,28 @@ public class ExpressonWriterTests
         Debug.Log(output);
     }
 
+
+    [Test]
+    public void TestGenerateStructWithPublicFields()
+    {
+        var gen = new CodeUnitGenerator("TestCodeGen");
+        var structGen = new StructGenerator("TestComponent")
+            .SetIsSealed(false);
+        
+        var field = new FieldGenerator(typeof(int), "MyField",true);
+        structGen.AddField(field);
+        var field2 = new FieldGenerator(typeof(int), "MyField2", true);
+        structGen.AddField(field2);
+        gen.AddType(structGen);
+        var ccu = gen.GenerateCompileUnit();
+
+        var output = StringCompiler.CompileToString(ccu);
+        Assert.IsTrue(output.Contains("struct"));
+        Assert.IsTrue(output.Contains("MyField"));
+        Assert.IsTrue(output.Contains("MyField2"));
+        Debug.Log(output);
+    }
+
     /* This is not implmented in the CSharpProvider
     [Test]
     public void TestParseCode()

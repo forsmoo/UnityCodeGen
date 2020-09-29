@@ -1,6 +1,6 @@
 {
   "name": "com.letitroll.codegen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "Codegen",
   "description": "Build types in runtime, or at edit time",
   "unity": "2019.4",
