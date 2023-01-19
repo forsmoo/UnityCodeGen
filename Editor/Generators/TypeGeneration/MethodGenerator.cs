@@ -21,6 +21,11 @@ namespace CodeGeneration
             Member.Attributes = MemberAttributes.Public | MemberAttributes.Final; //If Final is not included it will be virtual
         }
 
+        public void MakeStatic()
+        {
+            Member.Attributes |= MemberAttributes.Static;
+        }
+
         public MethodGenerator(string eventName, DelegateGenerator forDelegate)
         {
             this.Name = eventName + "_" + forDelegate.Name;

@@ -20,6 +20,14 @@ namespace CodeGeneration
             classType.TypeAttributes = TypeAttributes.Public;
         }
 
+        public void MakeStatic()
+        {
+            classType.StartDirectives.Add(
+                new CodeRegionDirective(CodeRegionMode.Start, "\nstatic"));
+            classType.EndDirectives.Add(
+                new CodeRegionDirective(CodeRegionMode.End, String.Empty));
+        }
+
         public List<AutoPropertyGenerator> AutoProperties = new List<AutoPropertyGenerator>();
         public List<FieldGenerator> Fields = new List<FieldGenerator>();
         public List<PropertyGenerator> Properties = new List<PropertyGenerator>();
